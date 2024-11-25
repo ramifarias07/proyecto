@@ -1,0 +1,318 @@
+@import url('https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@100..1000&display=swap');
+
+*{
+    font-family: "Afacad Flux", sans-serif;
+    font-optical-sizing: auto;
+    font-variation-settings:
+      "slnt" 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    margin: 0%;
+    padding: 0%;
+    background-color: #aed6f1;
+    
+}
+
+
+a{
+    text-decoration: none;
+    color: black;
+    user-select: none; /* Evita la selección del texto */
+}
+
+header {
+    background-color: #3086c0;
+    color: #fff;
+    text-align: center;
+    width: 100%;
+}
+
+main{
+    width: 85%;
+}
+
+#container {
+    display: flex;
+
+    flex: 1;
+    background-color: #aed6f1;
+
+    width: 100%;
+}
+.container2{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: space-evenly;
+    background-color:#2379b3 ;
+    color: white;
+}
+aside#sidebar {
+    background-color: #3498db;
+    width: 15%;
+    padding: 1rem;
+    overflow-y: auto; /* Añade barra de desplazamiento si el contenido es largo */
+}
+
+aside#sidebar h2 {
+    margin-top: 0;
+    font-size: 20px;
+}
+
+aside#sidebar ul {
+    list-style-type: none;
+    padding: 0;
+    font-size: 25px;
+}
+
+aside#sidebar ul li {
+    margin-bottom: 2px;
+    font-size: 20px;
+}
+
+aside#sidebar ul li a {
+    text-decoration: none;
+    color: #333;
+    display: block;
+    padding: 0.5rem;
+    border-radius: 4px;
+    font-size: 20px;
+}
+
+aside#sidebar ul li a:hover {
+    background-color: #ddd;
+} /* Color cuando pasamos por arriba */
+
+main#main-content {
+    flex-grow: 1;
+    background-color: #aed6f1;
+    padding: 20px;
+}
+
+
+h2{
+    color: #333;
+    transition: background-color 0.3s, color 0.3s;
+    user-select: none; /* Evita la selección del texto */
+    font-size: 3em;
+}
+
+h3 {
+    color: #333;
+    transition: background-color 0.3s, color 0.3s; 
+    user-select: none; /* Evita la selección del texto */
+}
+
+aside#Jugadores{
+    color: black;
+    margin: auto;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+    color: white;
+    text-align: center;
+    width: 980px;
+}
+
+
+
+ul#Jugadores2{
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    font-size: 20px;
+}
+
+/*Caracteristicas de los botones*/
+ul#Jugadores2 button{
+    background-color: #5B99C2;
+    color: white;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: "Afacad Flux", sans-serif;
+    font-optical-sizing: auto;
+    font-variation-settings:
+      "slnt" 0;
+    flex: 1 0 20%; /* Ajusta el tamaño y número de elementos por fila */
+    text-align: center;
+    transition: background-color 0.3s;
+    font-size: 20px;
+
+}
+
+/* Cambia el color de fondo al pasar el cursor sobre el botón */
+ul#Jugadores2 button:hover {
+    background-color: #5b99E9;
+}
+
+/* Imagen del descenso*/
+#bdescenso {
+    width: 60px;
+    height: 90px;
+}
+
+
+/* Contenedor info de los jugadores */
+.title-container{
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    margin: 15px;
+    width: calc(25% - 30px); /* Para 4 elementos en una fila */
+    box-sizing: border-box;
+}
+
+/* imagenes de las copas (No estan en la carpeta, no se pueden modificar) 
+.title-image{
+}*/
+
+/* Equipo y compañero */
+.title-info{
+    font-size: 22px;
+}
+
+
+#contorno {
+    color: white; /* Color del texto */
+    text-shadow: 
+        -1px -1px 0 black,  
+         1px -1px 0 black,
+        -1px  1px 0 black,
+         1px  1px 0 black; /* Contorno negro */
+}
+
+
+.news-section {
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    max-width: 600px;
+    margin: 20px auto;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.news-title {
+    text-align: center;
+    font-size: 1.8em;
+    margin-bottom: 15px;
+}
+
+.news-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.news-item {
+    text-align: center;
+}
+
+.news-item img {
+    width: 100%; /* Ajusta al contenedor */
+    height: auto;
+    border-radius: 5px;
+}
+
+.news-link {
+    display: block;
+    padding: 10px;
+    margin-top: 10px;
+    background-color: #e1e1e1;
+    text-decoration: none;
+    color: #333;
+    border-radius: 5px;
+}
+
+.news-buttons {
+    display: flex;
+    justify-content: space-between;
+}
+
+button {
+    padding: 10px 15px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+
+.progress-container {
+    width: 100%;
+    background-color: #e1e1e1;
+    border-radius: 5px;
+    height: 10px;
+    margin: 10px 0;
+}
+
+.progress-bar {
+    height: 100%;
+    width: 0;
+    background-color: #007BFF;
+    border-radius: 5px;
+    transition: width 5s linear;
+}
+
+.image-container {
+    display: flex;
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+    height: 77vh; /* Ajusta la altura según sea necesario */
+    width: 98%;
+}
+
+#champ{
+    width: 80%;
+    height: 100%;
+}
+
+#sudam{
+    width: 80%;
+    height: 100%;
+}
+
+#cop_am{
+    width: 77%;
+    height: 100%;
+}
+
+#prem{
+    width: 65%;
+    height: 100%;
+}
+
+#argen{
+    width: 70%;
+    height: 100%;
+}
+#liga{
+    width: 70%;
+    height: 100vh, 65%
+}
+#mundial{
+    width: 70%;
+    height: 100%;
+}
+#lib{
+    width: 70%;
+    height: 100%;
+}
+#mues{
+    width: 70%;
+    height: 100%;
+}

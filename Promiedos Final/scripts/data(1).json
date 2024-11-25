@@ -1,0 +1,19 @@
+{
+    "championships": [
+        {
+            "id": "1",
+            "name": "Campeonato A",
+            "description": "Descripción del Campeonato A.",
+            "date": "2024-01-01",
+            "location": "Ubicación A"
+        },
+        {
+            "id": "2",
+            "name": "Campeonato B",
+            "description": "Descripción del Campeonato B.",
+            "date": "2024-02-01",
+            "location": "Ubicación B"
+        }
+        /* Agrega más campeonatos según sea necesario */
+    ]
+}
